@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- Enlace a un archivo de estilo CSS -->
     <title>clima app</title>
 </head>
 <body>
+    <!-- Sección de encabezado superior -->
     <section class="top-banner"> 
         <div class="container">
-         <h1 class="heading">clima App</h1> 
-          <form> 
-              <input type="text" placeholder="Search for a city" autofocus>
-              <button type="submit">SUBMIT</button>
-              <span class="msg"></span> 
-          </form>
-         </div> 
+            <h1 class="heading">clima App</h1> <!-- Título de la aplicación -->
+            <form> 
+                <input type="text" placeholder="Search for a city" autofocus> <!-- Campo de entrada para buscar una ciudad -->
+                <button type="submit">SUBMIT</button> <!-- Botón de envío del formulario -->
+                <span class="msg"></span> <!-- Espacio para mensajes (errores, resultados, etc.) -->
+            </form>
+        </div> 
     </section> 
-              <section class="ajax-section"> 
-                <div class="container">
-                     <ul class="cities"></ul> 
-                </div>
-     </section>
-     <section>
-        <div>
-         <li class="city">
-         <h2 class="city-name" data-name="..."> <span>...</span> <sup>...</sup> </h2>
-         <span class="city-temp">...<sup>°C</sup></span> 
-         <figure> <img class="city-icon" src="..." alt="..."> <figcaption>...</figcaption> </figure> 
-         </li>
-  
 
-
+    <!-- Sección para mostrar información de ciudades -->
+    <section class="ajax-section"> 
+        <div class="container">
+            <ul class="cities"></ul> <!-- Lista donde se agregarán las ciudades -->
         </div>
-     </section>
+    </section>
 
+    <!-- Ejemplo de cómo se muestra la información de una ciudad -->
+    <section>
+        <div>
+            <li class="city">
+                <!-- Nombre de la ciudad y país -->
+                <h2 class="city-name" data-name="..."> <span>...</span> <sup>...</sup> </h2>
+                <!-- Temperatura -->
+                <span class="city-temp">...<sup>°C</sup></span> 
+                <!-- Icono del clima y descripción -->
+            </li>
+        </div>
+    </section>
 
+    <script src="main.js"></script> <!-- Inclusión del archivo JavaScript -->
 </body>
 </html>
